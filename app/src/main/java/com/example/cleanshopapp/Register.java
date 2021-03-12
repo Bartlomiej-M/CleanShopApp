@@ -81,7 +81,7 @@ public class Register extends AppCompatActivity {
                             public void onResponse(String response) {
                                 if (response.equals("Sign Up Success")) {
                                     Toast.makeText(Register.this, "Sign Up Success", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(Register.this, MainActivity.class);
+                                    Intent intent = new Intent(Register.this, Login.class);
                                     startActivity(intent);
                                     finish();
                                 } else if (response.equals("Sign up Failed")) {

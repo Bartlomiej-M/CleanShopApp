@@ -10,24 +10,16 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-
+public class Account extends AppCompatActivity {
     DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_account);
         drawerLayout = findViewById(R.id.drawer_layout);
     }
-
-
-
-
-////////////////////////////////////////////////////////////////////Navigation Drawer////////////////////////////////////////////////////////////////////
 
     public void ClickMenu(View view){
         MainActivity.openDrawer(drawerLayout);
@@ -118,8 +110,5 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-////////////////////////////////////////////////////////////////////Navigation Drawer////////////////////////////////////////////////////////////////////
-
-
 
 }
